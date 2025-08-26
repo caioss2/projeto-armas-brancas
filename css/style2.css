@@ -1,0 +1,172 @@
+/* Variáveis de Cores */
+:root {
+    --cor-destaque: black;
+    --cor-background: black;
+    --cor-botao: #550000;
+    --cor-normal: #ac0000;
+}
+
+/* Estilo Geral */
+body {
+    background-color: var(--cor-background);
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Fonte do corpo */
+    color: var(--cor-normal);
+}
+
+/* Cabeçalho */
+header {
+    background-image: url("../imagens/pagina_inicial.jpg");
+    height: 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* Navegação */
+nav {
+    margin: 120px auto 0 auto;
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+}
+
+a {
+    background-color: var(--cor-botao);
+    color: var(--cor-normal);
+    margin-left: 10px;
+    padding: 10px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: #440000;
+}
+
+/* Botões */
+.botao {
+    background-color: var(--cor-botao);
+    color: var(--cor-normal);
+    border-radius: 25px;
+    padding: 10px 35px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #440000;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Fonte dos títulos */
+    color: var(--cor-normal);
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* Parágrafos */
+p {
+    color: var(--cor-normal);
+    line-height: 1.6;
+}
+
+/* Listas */
+li {
+    list-style: url(../imagens/lista.gif) inside;
+    margin: 5px 0;
+}
+
+/* Tabelas */
+table {
+    color: var(--cor-normal);
+    border: 1px solid black;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(67, 69, 71);
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid black;
+    vertical-align: top;
+}
+
+table tr:nth-child(even) {
+    background-color: black; /* cor da tabela */
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Imagens */
+img {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+img:hover {
+    filter: none;
+}
+
+.logo {
+    filter: none;
+}
+
+/* Seções Específicas */
+#mapa {
+    text-align: center;
+}
+
+#pilum, #gladius {
+    font-size: 30px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-background);
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    color: var(--cor-normal);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    background: none;
+    color: var(--cor-normal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

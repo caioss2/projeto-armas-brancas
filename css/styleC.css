@@ -1,0 +1,181 @@
+:root {
+    --cor-destaque: black;
+    --cor-background: black;
+    --cor-botao: #550000;
+    --cor-normal: #ac0000;
+}
+
+/* Corpo da página */
+body {
+    background-color: var(--cor-background);
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: var(--cor-normal);
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    height: 400px;                /* Mantém padrão com as outras páginas */
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            /* Faz a imagem preencher sem distorcer */
+    display: block;
+    filter: blur(5px);            /* Efeito fosco */
+    transition: filter 0.3s ease;
+}
+
+header img:hover,
+header img:active {
+    filter: blur(0);              /* Fica nítida ao passar mouse ou clicar */
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: var(--cor-normal);
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* Parágrafos */
+p {
+    color: var(--cor-normal); 
+    line-height: 1.6;
+    text-align: justify;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+/* Tabelas */
+table {
+    color: var(--cor-normal);
+    border: 1px #000 solid;
+    margin: auto;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(67, 69, 71);
+    text-align: center;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+    border-top: 1px solid black;      
+}
+
+table tr:nth-child(even) {
+    background-color: black;
+}
+
+caption {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Listas */
+li {
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+/* Botões */
+.botao {
+    background-color: var(--cor-botao);
+    color: var(--cor-normal);
+    margin: 0px 10px;
+    padding: 10px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #440000;
+}
+
+/* Menu de navegação */
+.menu {
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* Imagens com efeito blur */
+main img {
+    filter: blur(5px);          
+    transition: filter 0.3s ease; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main img:hover,
+main img:active {
+    filter: blur(0);            
+}
+
+/* Seções específicas */
+#chinesa {
+    height: 300px;
+    margin: 2rem auto;
+}
+
+#chinesa2 {
+    height: 300px;
+    margin: 1rem auto;
+}
+
+.jian {
+    width: auto;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.zhua {
+    width: auto;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-background);
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    color: var(--cor-normal);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    background: none;
+    color: var(--cor-normal);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,135 @@
+/* Variáveis de cores */
+:root {
+  --cor-fundo: #000;
+  --cor-texto: #ac0000;
+  --cor-destaque: #ff0000;
+  --cor-botao: #550000;
+  --cor-botao-hover: #770000;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cor-texto);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; text-decoration: underline; }
+h3 { font-size: 1.5rem; font-style: italic; }
+
+/* Botões e links */
+a, .botao {
+  display: inline-block;
+  background: var(--cor-botao);
+  color: var(--cor-texto);
+  padding: 10px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+a:hover, .botao:hover {
+  background: var(--cor-botao-hover);
+  color: #fff; /* Cor da fonte no hover */
+}
+
+/* Menu de navegação */
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+/* Galeria de imagens com Flexbox */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;           /* permite quebra de linha */
+  justify-content: center;   /* centraliza os itens */
+  gap: 1rem;                 /* espaço entre imagens */
+  padding: 1rem;
+}
+
+.gallery-container figure {
+  flex: 1 1 250px;           /* cresce e encolhe, base 250px */
+  max-width: 300px;          /* limite máximo da largura */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(255, 0, 0, 0.03);
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container figure:hover {
+  transform: scale(1.05);
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  filter: blur(2px) brightness(0.9);
+  transition: filter 0.4s ease;
+  border-radius: 8px;
+}
+
+.gallery-container figure:hover img {
+  filter: none;
+}
+
+.gallery-container figcaption {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  transition: bottom 0.3s ease;
+}
+
+.gallery-container figure:hover figcaption {
+  bottom: 0;
+}
+
+/* Rodapé */
+footer {
+  border-top: 1px solid var(--cor-destaque);
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  h1 { font-size: 1.8rem; }
+  .menu ul { flex-direction: column; }
+  .gallery-container figure {
+    flex: 1 1 90%;  /* no celular ocupa quase toda largura */
+    max-width: 100%;
+  }
+}

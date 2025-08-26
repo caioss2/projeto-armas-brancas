@@ -1,0 +1,169 @@
+/* Variáveis de cores */
+:root{
+    --cor-destaque: black;       /* Cor principal de destaque */
+    --cor-background: black;     /* Fundo da página */
+    --cor-botao: #550000;       /* Cor de fundo dos botões */
+    --cor-botao-hover: #770000; /* Cor de fundo dos botões no hover */
+    --cor-normal: #ac0000;       /* Cor padrão de textos */
+}
+
+/* Estilo geral da página */
+body{
+    background-color: var(--cor-background); /* Fundo preto */
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Fonte do corpo */
+    color: var(--cor-normal); /* Texto em vermelho */
+}
+
+/* Cabeçalho */
+header{
+    background-image: url("../imagens/pagina_inicial.jpg"); /* Imagem de capa */
+    height: 3%;
+    
+    background-size: cover;
+    
+}
+
+/* Títulos (h1, h2, h3) */
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Fonte dos títulos */
+    color: var(--cor-normal);
+    text-align: center;
+}
+
+h1{
+    font-size: 48px; /* Título principal */
+}
+
+h2{
+    font-size: 36px; /* Subtítulos */
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 30px; /* Títulos menores / seções */
+    font-style: italic;
+}
+
+/* Parágrafos */
+p {
+    color: var(--cor-normal); 
+}
+
+/* Tabelas */
+table{
+    color: var(--cor-normal);
+    border: 1px #000 solid;
+    margin: auto; /* Centraliza a tabela */
+}
+
+th{
+    background-color: rgb(67, 69, 71);
+    text-align: center;
+    padding: 5px;
+}
+
+td{
+    padding: 5px;
+    border-top: 1px solid black;      
+}
+
+table tr:nth-child(even){
+    background-color: rgb(33, 110, 9); /* Linhas pares da tabela com cor diferente */
+}
+
+caption{
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Listas */
+li{
+    list-style:url(../imagens/lista.gif); 
+    list-style-position: inside;
+}
+
+/* Botões*/
+.botao {
+    background-color: var(--cor-botao);
+    color: var(--cor-normal);
+    margin: 0 10px;
+    padding: 10px 35px;
+    border-radius: 25px; 
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: var(--cor-botao-hover); /* Cor de fundo no botão */
+    color: #fff; /* Texto branco no botão */
+}
+
+/* Mapas / elementos centralizados*/
+#mapa{
+    text-align: center;
+}
+
+/* Menu de navegação */
+.menu{
+    text-align: center;
+}
+
+/* Imagens */
+img:hover{
+    filter: none; /* Remove efeito hover */
+}
+
+.logo{
+    filter: none;
+}
+
+/* Links*/
+a{
+    background-color: var(--cor-botao);
+    color: var(--cor-normal);
+    margin-left: 10px;
+    padding: 10px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Listas secundárias */
+li{
+    list-style: none;
+}
+
+/* Navegação*/
+nav{
+    margin: 120px auto 0px auto; /* Centraliza e espaça o menu */
+}
+
+/* Efeito blur nas imagens*/
+img{
+    filter: blur(5px);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-background); 
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #333; 
+    color: var(--cor-normal);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Links do rodapé */
+footer a {
+    background: none;
+    color: var(--cor-normal);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
