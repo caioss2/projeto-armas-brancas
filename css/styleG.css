@@ -117,11 +117,12 @@ a:hover, .botao:hover {
   bottom: 0;
 }
 
-/* Rodapé */
-footer {
-  border-top: 1px solid var(--cor-destaque);
-  padding: 1rem;
+/* Mensagem de Aviso */
+footer p {
   font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
 }
 
 /* Responsividade */

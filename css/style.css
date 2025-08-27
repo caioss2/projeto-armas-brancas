@@ -167,3 +167,11 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* Mensagem de Aviso */
+footer p {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+}
+
